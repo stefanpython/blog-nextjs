@@ -1,7 +1,14 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Home page</h1>
+    <main className="py-6">
+      <div className="container max-w-2xl m-auto px-4">
+        <nav className="flex space-x-4 text-xl">
+          <Link href="/about">About</Link>
+          <Link href="posts">Posts</Link>
+        </nav>
+      </div>
     </main>
   );
 }
