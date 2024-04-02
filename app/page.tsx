@@ -4,13 +4,6 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="py-6">
-      <div className="container max-w-2xl m-auto px-4">
-        <nav className="flex space-x-4 text-xl">
-          <Link href="/">About</Link>
-          <Link href="posts">Posts</Link>
-        </nav>
-      </div>
-
       <div className="container max-w-2xl m-auto px-4 py-12">
         <h1 className="text-2xl font-semibold">
           Hey, I'm a Senior Software Engineer at Company. I enjoy working with
