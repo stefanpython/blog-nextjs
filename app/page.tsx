@@ -6,7 +6,7 @@ export default function Home() {
     <main className="py-6">
       <div className="container max-w-2xl m-auto px-4 py-12">
         <h1 className="text-2xl font-semibold">
-          Hey, I'm a Senior Software Engineer at Company. I enjoy working with
+          Hey, I am a Senior Software Engineer at Company. I enjoy working with
           Next.js and crafting beautiful front-end experiences.
         </h1>
 

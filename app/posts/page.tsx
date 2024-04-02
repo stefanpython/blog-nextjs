@@ -5,7 +5,7 @@ export default function Posts() {
   return (
     <div className="container max-w-2xl m-auto px-4 py-10">
       {posts.map((post) => (
-        <Link href={`/posts/${post.id}`}>
+        <Link key={post.id} href={`/posts/${post.id}`}>
           <div key={post.id} className="post py-4">
             <h3 className="text-2xl font-medium">{post.title}</h3>
             <p>{post.description}</p>
