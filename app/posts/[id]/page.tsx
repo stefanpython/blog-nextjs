@@ -1,4 +1,5 @@
 import { posts } from "@/app/lib/placeholder-data";
+import Link from "next/link";
 
 export default function Page({ params }: { params: { id: string } }) {
   const id = parseInt(params.id); // Convert id to number
@@ -24,6 +25,13 @@ export default function Page({ params }: { params: { id: string } }) {
       <p className="text-xl pb-3">{filteredPost.description}</p>
       <span className="text-gray-500">{filteredPost.date}</span>
       <p className="py-2 text-lg">{filteredPost.content}</p>
+
+      <br />
+      <Link href={"/posts"}>
+        <button className="btn border rounded-md p-2 w-44 bg-amber-100 hover:bg-amber-200">
+          Back
+        </button>
+      </Link>
     </div>
   );
 }
